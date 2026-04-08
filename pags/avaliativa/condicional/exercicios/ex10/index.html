@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de <span>caixa</span></h1>
+    </header>
+    <main>
+    <div class="card">
+    <label for="preco">Preço da Etiqueta (R$):</label>
+    <input type="number" id="preco" placeholder="Ex: 150.00">
+    <label for="pagamento">Forma de Pagamento:</label>
+    <select id="pagamento">
+        <option value="1">1. À vista (Pix/Dinheiro) - 10% OFF</option>
+        <option value="2">2. À vista (Cartão) - 5% OFF</option>
+        <option value="3">3. Em 2x (Preço Normal)</option>
+        <option value="4">4. 3x ou mais (10% Juros)</option>
+    </select>
+    <button onclick="calculo()">Calcular Total</button>
+    <div id="res">Seu resultado aparecera aqui...</div>
+</div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
